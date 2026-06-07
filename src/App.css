@@ -190,15 +190,17 @@
 }
 
 body {
-  background-color: #333372;
+  background-color: #2a3049;
   color: #e2e8f0;
   font-family: 'Segoe UI', sans-serif;
 }
 
 .app {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 2rem auto;
   padding: 2rem;
+  background-color: #4a4a9d;
+  border-radius: 16px;
 }
 
 header {
