@@ -183,11 +183,52 @@
   }
 } */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333372;
+  color: #e2e8f0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-style: bold;
+  font-family: fantasy;
+  color: #e2e8f0;
+}
+
+header h2 {
+  font-size: 1rem;
+  font-style: bold;
+  font-family: fantasy;
+  color: #e2e8f0;
+}
+
+header p {
+  color: #94a3b8;
+  margin-top: 0.5rem;
+}
+
 .board{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 2rem;
-  padding: 2rem;
 }
 
 .card{
@@ -195,7 +236,29 @@
   border-radius: 12px;
   padding: 1rem;
   color: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0, 4);
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.6);
+}
+
+.card h2{
+  font-size: 1.1rem;
+  font-style: bold;
+  font-family: fantasy;
+  margin-bottom: 0.75rem;
+  color: #f1f5f9;
+}
+
+.card p{
+  font-size: 1rem;
+  font-style: bold;
+  font-family: fantasy;
+  color: #2a3053;
+  margin-bottom: 0.4rem;
 }
 
 .card img{
@@ -206,7 +269,12 @@
 .card a{
   display: inline-block;
   margin-top: 0.75rem;
-  color: #566D7E;
+  color: #152129;
   text-decoration: none;
   font-weight: bold;
+  font-family: fantasy;
+}
+
+.card a:hover {
+  text-decoration: underline;
 }
